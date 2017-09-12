@@ -32,23 +32,21 @@ passport.use(
       callbackURL: "/auth/google/callback",
       proxy: true
     },
-    (accessToken, refreshToken, profile, done) => {
-      User.findOne({ googleId: profile.id }).then(existingUser => {
-        if (existingUser) {
-          // we already have a record with the given profile ID
-          done(null, existingUser);
-        } else {
-          /* we don't have a user record with this ID, make a new record
+    async (accessToken, refreshToken, profile, done) => {
+      const existingUSer = await User.findOne({ googleId: profile.id });
+
+      if (existingUser) {
+        // we already have a record with the given profile ID
+        return done(null, existingUser);
+      }
+      /* we don't have a user record with this ID, make a new record
                 create new instance of the user model
                 .save() -> take this model instance and save it to database (mongoDB) */
-          new User({ googleId: profile.id })
-            .save()
-            .then(user => done(null, user));
-          // the above is an asynchronous operation (saving to the database)... don't want to
-          // call done before we are sure that the user has been successfully saved to db
-          // *usually consider the callback 'user' to be more refined: therefore used as than the first 'new User' when we made it"""
-        }
-      });
+      const user = await new User({ googleId: profile.id }).save();
+      done(null, user);
+      // the above is an asynchronous operation (saving to the database)... don't want to
+      // call done before we are sure that the user has been successfully saved to db
+      // *usually consider the callback 'user' to be more refined: therefore used as than the first 'new User' when we made it"""
     }
   )
 );
