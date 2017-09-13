@@ -13,9 +13,9 @@ mongoose.connect(keys.mongoURI);
 const app = express();
 
 /* app.use calls are wiring up middleware inside our application
- middleware: small functions that can be used to modify incoming requests to our app before
- they are sent off to route handlers */
-//keys to encrypt cookie (not change Id)
+ middleware: small functions that can be used to modify incoming requests
+ to our app before they are sent off to route handlers */
+// keys to encrypt cookie (not change Id)
 app.use(
   cookieSession({
     maxAge: 30 * 24 * 60 * 60 * 1000,

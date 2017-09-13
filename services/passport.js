@@ -33,7 +33,7 @@ passport.use(
       proxy: true
     },
     async (accessToken, refreshToken, profile, done) => {
-      const existingUSer = await User.findOne({ googleId: profile.id });
+      const existingUser = await User.findOne({ googleId: profile.id });
 
       if (existingUser) {
         return done(null, existingUser);
@@ -45,7 +45,8 @@ passport.use(
       done(null, user);
       // the above is an asynchronous operation (saving to the database)... don't want to
       // call done before we are sure that the user has been successfully saved to db
-      // *usually consider the callback 'user' to be more refined: therefore used as than the first 'new User' when we made it"""
+      // *usually consider the callback 'user' to be more refined:
+      // therefore used as than the first 'new User' when we made it
     }
   )
 );

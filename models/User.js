@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 // const Schema = mongoose.Schema;  (the same as below)
 const { Schema } = mongoose;
 
@@ -7,4 +7,4 @@ const userSchema = new Schema({
 });
 
 // loads a schema into mongoose
-mongoose.model('users', userSchema);
+mongoose.model("users", userSchema);
