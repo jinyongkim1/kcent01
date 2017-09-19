@@ -2,30 +2,29 @@ import React, { Component } from "react";
 import { BrowserRouter, Route } from "react-router-dom";
 import { connect } from 'react-redux';
 import * as actions from '../actions';
-
 import Header from "./Header";
 import Landing from './Landing';
 import Dashboard from './Dashboard';
-const AdsNew = () => <h2>AdsNew</h2>;
+import AdNew from './ads/AdNew';
+import Login from './Login';
+
 
 class App extends Component {
   componentDidMount(){
     this.props.fetchUser();
   }
 
-
   render() {
     return (
-      <div className="container">
         <BrowserRouter>
-          <div>
+          <div className="container">
             <Header />
             <Route exact path="/" component={Landing} />
+            <Route exact path="/login" component={Login} />
             <Route exact path="/ads" component={Dashboard} />
-            <Route path="/ads/new" component={AdsNew} />
+            <Route path="/ads/new" component={AdNew} />
           </div>
         </BrowserRouter>
-      </div>
     );
   }
 }
