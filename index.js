@@ -7,6 +7,7 @@ const keys = require("./config/keys");
 require("./models/User");
 require("./models/Ad");
 require("./services/passport");
+
 // requiring User before passport is vital: you're defining the schema
 // inside the User.js file, and then utilizing it in the passport.js
 

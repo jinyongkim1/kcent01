@@ -6,7 +6,8 @@ import Header from "./Header";
 import Landing from './Landing';
 import Dashboard from './Dashboard';
 import AdNew from './ads/AdNew';
-import Login from './Login';
+import SocialHeader from './SocialHeader';
+import LogoHeader from './LogoHeader';
 
 
 class App extends Component {
@@ -17,10 +18,11 @@ class App extends Component {
   render() {
     return (
         <BrowserRouter>
-          <div className="container">
+          <div>
+            <SocialHeader/>
+            <LogoHeader />
             <Header />
             <Route exact path="/" component={Landing} />
-            <Route exact path="/login" component={Login} />
             <Route exact path="/ads" component={Dashboard} />
             <Route path="/ads/new" component={AdNew} />
           </div>

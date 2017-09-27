@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 import Payments from "./Payments";
-import '../css/style.css';
 
 // only requirement for the keys: that they're unique and they're consistant
 // between renders (but these get rendered only once)
@@ -14,8 +13,7 @@ class Header extends Component {
       case false:
         return (
           <li>
-            <Link to="/login">Login</Link>
-            //<a href="/auth/google">Google</a>
+            <a href="/auth/google">Google</a>
           </li>
         );
       default:
@@ -36,7 +34,7 @@ class Header extends Component {
       <nav>
         <div className="nav-wrapper">
           <Link to={this.props.auth ? "/ads" : "/"} className="brand-logo">
-            INKET
+            NavBar
           </Link>
           <ul className="right">{this.renderContent()}</ul>
         </div>
