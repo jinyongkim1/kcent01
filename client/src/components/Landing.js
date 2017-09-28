@@ -19,7 +19,7 @@ import {
 } from "neal-react";
 import '../css/style.css';
 
-const brandName = "SamplePage";
+const brandName = "KCTICS";
 const brand = <span>{brandName}</span>;
 
 const onSignup = ({ name: name, email: email, password: password }) => Stripe.StripeHandler.open({
@@ -33,9 +33,9 @@ const onSignup = ({ name: name, email: email, password: password }) => Stripe.St
 const businessAddress = (
   <address>
     <strong>{brandName}</strong><br/>
-    1337 Market Street, Suite 1337<br/>
-    San Francisco, CA 94103<br/>
-    +1 (123) 456-7890
+    서울시 강남구 역삼동 832-20 제이플러스 빌딩 5층<br/>
+    Seoul, Korea<br/>
+    +82 (10) 9173-9157
   </address>
 );
 
@@ -70,35 +70,6 @@ const pricingPlan3 = Object.assign({}, pricingPlan2, {
   }),
 });
 
-const sampleCode = `<Page>
-  <Hero><h1>{ /* Content */ }</h1></Hero>
-  <Section heading="Hello!">
-    <HorizontalSplit padding="md"> { /* Content */ } </HorizontalSplit>
-  </Section>
-  <Section>
-    <Team>
-      <TeamMember name="Link" title="Co-founder" imageUrl="img/link.jpg"> { /* Description */ } </TeamMember>
-      <TeamMember name="Yoshi" title="Co-founder" imageUrl="img/yoshi.jpg"> { /* Description */ } </TeamMember>
-    </Team>
-  </Section>
-  <Section>
-    <div className="landing-01">
-      <div>
-      <PricingPlan {... pricingPlan1} />
-      </div>
-      <div>
-      <PricingPlan {... pricingPlan2} />
-      </div>
-      <div>
-      <PricingPlan {... pricingPlan3} />
-      </div>
-    </div>
-    <SignupInline onSubmit={onSignupCallback}/>
-  </Section>
-</Page>
-`;
-
-
 export default (props) => {
   return (
     <Page>
@@ -109,7 +80,7 @@ export default (props) => {
         <h1 className="display-4"> Influencer Analytics & Management </h1>
         <p className="lead"> KCTICS는 마케팅이 필요한 기업과 인플루언서들을 연결하는 인플루언서 플랫폼입니다</p>
         <p>
-          <a href="https://github.com/dennybritz/neal-react" target="_blank" className="btn btn-white">
+          <a href="/influencer"  className="btn btn-white">
             더 알아보기
           </a>
         </p>
@@ -117,37 +88,44 @@ export default (props) => {
 
       <Section className="subhero">
         <ImageList centered>
-          <ImageListItem src="img/press/cnn-logo.png" url="http://www.cnn.com"/>
-          <ImageListItem src="img/press/forbes-logo.png" url="http://forbes.com/"/>
-          <ImageListItem src="img/press/theverge-logo.png" url="http://www.theverge.com/"/>
-          <ImageListItem src="img/press/techcrunch-logo.jpg" url="http://techcrunch.com/"/>
+          <ImageListItem src="img/press/snow.png" url="http://www.cnn.com"/>
+          <ImageListItem src="img/press/bigo-live.jpg" url="http://forbes.com/"/>
+          <ImageListItem src="img/press/up-live.jpg" url="http://www.theverge.com/"/>
+          <ImageListItem src="img/press/sbs.png" url="http://techcrunch.com/"/>
+          <ImageListItem src="img/press/cjem.png" url="http://techcrunch.com/"/>
         </ImageList>
-      </Section>
-
-      <Section className="nopad-bottom">
-        <Code lang="jsx" block>{sampleCode}</Code>
       </Section>
 
       <Section>
         <div className="landing-01">
-          <div>
-            <p className="lead">Batteries Included</p>
-            <p>Neal is based on <a href="http://v4-alpha.getbootstrap.com/" target="_blank">Bootstrap 4</a> and ships with navbar, hero, footer, sections, horizontal split, pricing tables, customer quotes and other components you need for a landing page. No more repetitive coding! Oh, and its easy to extend.</p>
+          <div className="card">
+            <div className="card-image">
+              <img src="img/people/boo.jpg"></img>
+              <span className="card-title"><a href="/sns-ranking">인플루언서 랭킹</a></span>
+            </div>
+            <div className="card-content">
+              <p> SNS도달률, 관계 밀접도, 안정성 및 퀄리티, 네트워크 효과를 고려해 가장 <b>영향력 있는 인플루언서</b>를 한 눈에 볼 수 있습니다.  </p>
+            </div>
           </div>
-          <div>
-            <p className="lead">Third-Party Integrations</p>
-            <p>External integrations like &nbsp;
-              <a href="http://www.google.com/analytics/">Google Analytics</a>,&nbsp;
-              <a href="https://segment.com/">Segment</a>,&nbsp;
-              <a href="https://stripe.com/">Stripe</a> and&nbsp;
-              <a href="http://typeform.com">Typeform</a> are included.
-              No more copying & pasting integration code, all you need is your API keys. We automatically track events when visitors navigate to different parts of your page.</p>
+          <div className="card">
+            <div className="card-image">
+              <img src="img/people/boo.jpg"></img>
+              <span className="card-title"><a href="/sns-ranking">광고 캠페인</a></span>
+            </div>
+            <div className="card-content">
+              <p> 예산에 맞는 가장 효율적인 광고를 진행하세요. 회사의 브랜드 이미지아 가장 잘 맞는 인플루언서를 추천해드립니다. <a href="/inquiries">광고문의</a>를 하시거나, <a href="/login">로그인</a>하여 더 정확한 추천을 받으세요. </p>
+            </div>
           </div>
-          <div>
-            <p className="lead">Serverless Deployment</p>
-            <p>Because you are relying on react.js and third-party integration you don't need a server to host your landing page. Simply upload it to an Amazon S3 bucket, enable website hosting, and it's ready to go!</p>
+        <div className="card">
+          <div className="card-image">
+            <img src="img/people/boo.jpg"></img>
+            <span className="card-title"><a href="/sns-ranking">제휴 문의</a></span>
+          </div>
+          <div className="card-content">
+            <p> 파트너쉽이나 컨텐츠 제작, 광고, 소속 인플루언서에 대해 궁금한 점이 있으면 언제든지 연락주세요. </p>
           </div>
         </div>
+      </div>
       </Section>
 
       <Section heading="Inline and Modal Signup components" className="gray">
@@ -183,9 +161,7 @@ export default (props) => {
 
 
       <Footer brandName={brandName}
-        facebookUrl="http://www.facebook.com"
-        twitterUrl="http://www.twitter.com/dennybritz"
-        githubUrl="https://github.com/dennybritz/neal-react"
+
         address={businessAddress}>
       </Footer>
     </Page>

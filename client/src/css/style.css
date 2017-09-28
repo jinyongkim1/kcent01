@@ -1,3 +1,58 @@
+.ranking-table {
+  margin: 20px 100px;
+
+}
+
+.brand-image{
+  width: 100px;
+  height: 100px;
+}
+
+.nav-title{
+  margin-left: 20px;
+}
+
+.nav-title:hover{
+  color: #4CAF50;
+  background-color: #fff;
+}
+
+.main-nav-right{
+  float: right;
+  list-style-type: none;
+  margin-left: 150px;
+  padding: 0;
+  overflow: hidden;
+}
+
+.main-nav{
+   list-style-type: none;
+   margin-left: 150px;
+   padding: 0;
+   overflow: hidden;
+   float: left;
+}
+
+.nav-item{
+  margin: 15px 0px;
+}
+
+
+.main-nav a{
+    display: inline;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+a.nav-item:hover {
+    color: #4CAF50;
+    background-color: #fff;
+}
+
+
 .nav-wrapper{
   background-color: #fff;
   color: black;
@@ -11,16 +66,37 @@
 .fa.fa-facebook, .fa.fa-youtube-play, .fa.fa-instagram{
   font-size: 23px;
   margin-left: 30px;
+  color: black;
 }
 
-button.right-navbar{
+.point-number{
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.point-add{
   font-size: 12px;
   line-height: 40px;
   float: right;
-  margin-right: 30px;
+  background-color: white;
+  color: black;
+  padding: 0px 14px;
+  margin: 8px 0px;
+  border: none;
+  border-bottom: 2px solid #4CAF50;
+  display: inline-block;
+  transition-duration: 0.4s;
+}
+
+
+.right-navbar{
+  font-size: 12px;
+  line-height: 40px;
   background-color: white;
   color: #4CAF50;
   border: 2px solid #4CAF50;
+  float: right;
+  margin-right: 30px;
   padding: 0px 10px;
   display: inline-block;
   margin: 8px 30px;
@@ -38,6 +114,8 @@ button.right-navbar{
   padding: 0px 14px;
   margin: 8px 0px;
   border: none;
+  display: inline-block;
+  transition-duration: 0.4s;
 
 }
 
@@ -63,7 +141,7 @@ button.right-navbar{
 
 .landing-01 div {
   flex: 1;
-  margin: 0 5px;
+  margin: 0 10px;
 }
 .btn.btn-primary.btn-full {
   border: none;

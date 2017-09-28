@@ -34,9 +34,6 @@
     "passport-google-oauth20": "^1.0.0",
     "passport-local": "^1.0.0",
     "path-parser": "^2.0.2",
-    "popper.js": "^1.12.5",
-    "react-helmet": "^5.2.0",
-    "react-router-hash-scroll": "^0.2.7",
     "sendgrid": "^5.2.3",
     "stripe": "^5.0.0"
   },
