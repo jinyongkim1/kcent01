@@ -15,7 +15,21 @@ module.exports = app => {
       res.redirect("/ads");
     }
   );
+/*
+  app.get('/auth/instagram', passport.authenticate('instagram'));
+  app.get('/auth/instagram/callback', passport.authenticate('instagram', { failureRedirect: '/login' }), (req, res) => {
+    res.redirect(req.session.returnTo || '/');
+  });
+  app.get('/auth/facebook', passport.authenticate('facebook', { scope: ['email', 'public_profile'] }));
+  app.get('/auth/facebook/callback', passport.authenticate('facebook', { failureRedirect: '/login' }), (req, res) => {
+    res.redirect(req.session.returnTo || '/');
+  });
+  app.get('/auth/twitter', passport.authenticate('twitter'));
+  app.get('/auth/twitter/callback', passport.authenticate('twitter', { failureRedirect: '/login' }), (req, res) => {
+    res.redirect(req.session.returnTo || '/');
+  });
 
+*/
   // req.logout() is a function that is automatically attached to the request object by
   // passport. When we call, it takes the cookie that contains the user id, and kills the
   // id that's in there.

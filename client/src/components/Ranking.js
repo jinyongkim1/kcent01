@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from 'react-router-dom';
 import { BootstrapTable, TableHeaderColumn } from 'react-bootstrap-table';
 
 const selectRowProp = {
@@ -235,7 +234,7 @@ var products = [
 ];
 
   function imageFormatter(cell, row){
-      return (<img style={{width:50}} src={cell}/>)
+      return (<img alt="facebook page icon" style={{width:50}} src={cell}/>)
     }
 
 const Ranking = () => {

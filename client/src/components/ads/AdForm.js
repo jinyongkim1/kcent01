@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import AdField from "./AdField";
 import validateEmails from '../../utils/validateEmails'
 import formFields from './formFields';
+import { Button, Container } from 'semantic-ui-react';
 
 class AdForm extends Component {
   renderFields() {
@@ -22,7 +23,7 @@ class AdForm extends Component {
   }
   render() {
     return (
-      <div>
+      <Container>
         <form onSubmit={this.props.handleSubmit(this.props.onAdSubmit)}>
           {this.renderFields()}
           <Link to="/ads" className="red btn-flat white-text">Cancel</Link>
@@ -30,7 +31,7 @@ class AdForm extends Component {
             Next <i className="material-icons right">done</i>
           </button>
         </form>
-      </div>
+      </Container>
     );
   }
 }

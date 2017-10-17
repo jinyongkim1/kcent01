@@ -14,8 +14,8 @@ class SocialHeader extends Component {
       case false:
         return (
           <li>
-              <a href="/auth/google"className="right-navbar">로그인</a>
-              <a href="/register" className="register">회원가입</a>
+              <Link to="/login" className="right-navbar">로그인</Link>
+              <Link to="/register" className="register">회원가입</Link>
           </li>
         );
       default:

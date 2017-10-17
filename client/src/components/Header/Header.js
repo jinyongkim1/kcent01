@@ -12,9 +12,9 @@ class Header extends Component {
           <Link to={this.props.auth ? "/ads" : "/"} className="nav-title">
             HOME
           </Link>
-          <a className="nav-item" href="/sns-ranking">SNS RANKING</a>
-          <a className="nav-item" href="/influencer">INFLUENCERS</a>
-          <a className="nav-item" href="/inquiries">문의하기</a>
+          <Link to='/sns-ranking' className="nav-item">SNS RANKING</Link>
+          <Link to='/influencer' className="nav-item">INFLUENCERS</Link>
+          <Link to='/inquiries' className="nav-item">문의하기</Link>
         </li>
     );
   }
