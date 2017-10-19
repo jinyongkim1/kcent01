@@ -73,4 +73,4 @@ userSchema.methods.gravatar = function gravatar(size) {
 
 // loads a schema into mongoose
 mongoose.model("users", googleUserSchema);
-mongoose.model("users-two", userSchema);
+mongoose.model("user", userSchema);

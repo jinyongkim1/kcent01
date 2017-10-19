@@ -15,7 +15,7 @@ class SocialHeader extends Component {
         return (
           <li>
               <Link to="/login" className="right-navbar">로그인</Link>
-              <Link to="/register" className="register">회원가입</Link>
+              <Link to="/signup" className="signup">회원가입</Link>
           </li>
         );
       default:

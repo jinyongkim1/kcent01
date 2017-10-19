@@ -368,14 +368,16 @@ export default class ModelSearch extends Component {
 
     return (
       <Grid container stretched>
-        <Grid.Column width={8}>
+				<Grid.Column width={4}>
+				<h3 className="gdd">KCTICS 인플루언서 검색 (Beta):</h3>
+				</Grid.Column>
+        <Grid.Column textAlign="left" width={8}>
           <Search
             loading={isLoading}
             onResultSelect={this.handleResultSelect}
             onSearchChange={this.handleSearchChange}
             results={results}
             value={value}
-            size='small'
             fluid
             input={{icon: 'search', iconPosition: 'left'}}
             {...this.props}

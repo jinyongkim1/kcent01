@@ -10,39 +10,28 @@ const Login = () => {
     <br></br>
     <br></br>
       <Form size='large'>
-         <Segment>
-           <Form.Input
-             fluid
-             icon='user'
-             iconPosition='left'
-             placeholder='이메일 아이디'
-           />
-           <Form.Input
-             fluid
-             icon='lock'
-             iconPosition='left'
-             placeholder='비밀번호'
-             type='password'
-           />
-           <Button color='teal' fluid size='large'>로그인</Button>
-         </Segment>
-
        </Form>
        <br></br>
+       <a href='/auth/facebook'>
        <Button color='facebook'>
        <Icon name='facebook' /> 페이스북
      </Button>
+     </a>
+     <a href='auth/twitter'>
      <Button color='twitter'>
        <Icon name='twitter' /> 트위터
      </Button>
+     </a>
      <a href='/auth/google'>
      <Button color='google plus'>
        <Icon name='google plus' /> 구글
      </Button>
      </a>
+     <a href='/auth/instagram'>
      <Button color='instagram'>
        <Icon name='instagram' /> 인스타그램
      </Button>
+     </a>
     </div>
     </Grid.Column>
     </div>

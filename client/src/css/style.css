@@ -1,3 +1,17 @@
+.blah{
+  height: 300px;
+  width: 300px;
+}
+
+.gdd{
+  font-family: 'NanumSquare', sans-serif;
+}
+
+.carousel-main{
+  text-align: right;
+  padding-left: 320px;
+}
+
 .footer{
   background-color: gray;
   padding-left: 75px;
@@ -45,7 +59,7 @@
   padding: 0px 14px;
   margin: 8px 0px;
   border: none;
-  border-bottom: 2px solid #4CAF50;
+  border-bottom: 2px solid #D67B79;
   display: inline-block;
   transition-duration: 0.4s;
 }
@@ -53,8 +67,8 @@
   font-size: 12px;
   line-height: 40px;
   background-color: white;
-  color: #4CAF50;
-  border: 2px solid #4CAF50;
+  color: #D67B79;
+  border: 2px solid #D67B79;
   float: right;
   margin-right: 30px;
   padding: 0px 10px;
@@ -63,10 +77,10 @@
   transition-duration: 0.4s;
 }
 .right-navbar:hover {
-  background-color: #4CAF50;
+  background-color: #D67B79;
   color: white;
 }
-.register{
+.signup{
   font-size: 12px;
   line-height: 44px;
   float: right;
@@ -79,8 +93,8 @@
   display: inline-block;
   transition-duration: 0.4s;
 }
-.register:hover {
-  background-color:  #4CAF50;
+.signup:hover {
+  background-color:  #D67B79;
   color: white;
 }
 
@@ -93,7 +107,7 @@
   margin-left: 20px;
 }
 .nav-title:hover{
-  color: #4CAF50;
+  color: #D67B79;
   background-color: #fff;
 }
 .main-nav{
@@ -119,7 +133,7 @@
 
 .main-nav a:focus{
   display: inline;
-  color: #4CAF50;
+  color: #D67B79;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -127,7 +141,7 @@
 }
 
 a.nav-item:hover {
-  color: #4CAF50;
+  color: #D67B79;
   background-color: #fff;
 }
 .nav-wrapper{
@@ -176,7 +190,7 @@ a.nav-item:hover {
   color: #1050b7;
 }
 .main-container-title-one{
-  color: #4CAF50;
+  color: #D67B79;
   padding: 60px 60px;
   padding-bottom: 20px;
   font-size: 17px;
@@ -238,7 +252,7 @@ a:active{
   height: 50px;
 }
 .landing-category:focus{
-  background-color: #4CAF50; /* Green */
+  background-color: #D67B79; /* Green */
   color: white;
 }
 
@@ -248,6 +262,9 @@ a:active{
  */
 .ranking-table {
   margin: 20px 100px;
+  font-size: 15px;
+  font-family: 'NanumSquare', sans-serif;
+  vertical-align: middle;
 }
 
 /*
@@ -255,7 +272,7 @@ a:active{
  */
 
 .inquiries-category{
-  background-color: #4CAF50;
+  background-color: #D67B79;
   border: none;
   color: white;
   font-size: 16px;
@@ -265,12 +282,12 @@ a:active{
 .inquiries-category:focus{
   border-bottom: 2px solid white;
   padding-bottom: 1px;
-  background-color: #4CAF50;
+  background-color: #D67B79;
 }
 .inquiries-category:hover{
   border-bottom: 2px solid white;
   padding-bottom: 1px;
-  background-color: #4CAF50;
+  background-color: #D67B79;
 }
 
 .col-centered{
@@ -300,7 +317,7 @@ a:active{
   font-weight: 500;
 }
 .inquiries-section{
-  background-color: #4CAF50;
+  background-color: #D67B79;
   height: 1000px;
 }
 
